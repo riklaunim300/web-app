@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/static/style_id.css">
+    <link href="{{url_for("static", filename="style_geo")}}" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/961cfbd158.js" crossorigin="anonymous"></script>
+	<title>Geolocation</title>
+</head>
+<body>
+    <div class="banner">
+        <h1 class="tittle" data-text="Geolocation">ID Caller</h1>
+        <div class="search-box">
+            <form method="POST">
+                <input class="search-txt" type="text" name="url" placeholder="Search for a location">
+                <button class="search-btn" type="submit" formaction="/envia3">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+    </div>	
+</body>
+</html>
