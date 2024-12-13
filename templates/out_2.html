@@ -13,10 +13,12 @@
         <div class="box">
             <span></span>
             <div class="content">
-                <h3>
-
-
+                <h3>                    
+                    {%autoescape false%}
                     
+                    {{temp | replace (",", "</br>")}}
+
+                    {%endautoescape%}                    
                 </h3>
             </div>
         </div>

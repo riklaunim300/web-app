@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Permanent+Marker', sans-serif;
+}
+
+body{
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	place-items: center;
+	background: #111;
+}
+
+h1{
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 0 30px;
+	font-size: 3em;
+	color: #fff;
+}
+
+.banner{
+	position: relative;
+	width: 1200px;
+	height: 500px;
+	display: flex;
+	align-items: center;
+	background: linear-gradient(45deg, #0e1538, #00ccff, #0e1538, #d400d4, #0e1538);
+	border-radius: 20px;
+	box-shadow: inset 5px 5px 5px rgba(247,191,190, 0.2),
+		inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+		5px 5px 15px rgba(0,0,0,0.3),
+		  -5px -5px 15px rgba(247,191,190, 0.2);
+}
+
+.search-btn{
+	position: absolute;
+	top: 40.4%;
+	left: 57.9%;
+	color: #fff;
+	float: right;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: #0e1538;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.search-txt{
+	position: absolute;
+	top: 40%;
+	left: 35%;
+	background: none;
+	outline: none;
+	border-radius: 20px;
+	padding: 0 40px;
+	color: white;
+	float: center;
+	transition: 0.4s;
+	line-height: 40px;
+	width: 240px;
+}
