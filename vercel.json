@@ -4,15 +4,16 @@
         {"src": "app.py", "use": "@vercel/python"}
     ],
     "routes": [
-        {"src":"/(.*)", 
+        {
+            "src":"/(.*)", 
             "dest": "app.py",
-            "methods":[
+            "methods": [
                 "GET",
                 "POST",
                 "PUT",
                 "PATCH",
                 "DELETE",
-                "OPTIONS",                
+                "OPTIONS"               
             ]
         }
     ]
