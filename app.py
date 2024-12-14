@@ -1,11 +1,11 @@
-from flask import Flask, json, render_template, request, Response, redirect, jsonify
-from geopy.geocoders import Nominatim
-import folium
+from flask import Flask, json, render_template, request, Response, redirect, jsonify # type: ignore
+from geopy.geocoders import Nominatim # type: ignore
+import folium # type: ignore
 import urllib.request
 import os
-import phonenumbers
-from phonenumbers import geocoder, carrier, timezone
-from opencage.geocoder import OpenCageGeocode
+import phonenumbers # type: ignore
+from phonenumbers import geocoder, carrier, timezone # type: ignore
+from opencage.geocoder import OpenCageGeocode # type: ignore
 
 key = '29863443ad13421181f0d61b9900932e'
 
@@ -78,4 +78,4 @@ def id_html():
         return render_template('out.html', temp=result_1)
 
 if __name__ == '__main__':
-    app.run(host="localhost")
+    app.run(debug=True)

@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_0179977402d3d3155cb74a37fc00eb12 {
+                #map_7a3b4d52563d5a4fd4d30bb8da6f9a60 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -39,20 +39,23 @@
 <body>
     
     
-            <div class="folium-map" id="map_0179977402d3d3155cb74a37fc00eb12" ></div>
+            <div class="folium-map" id="map_7a3b4d52563d5a4fd4d30bb8da6f9a60" ></div>
         
 </body>
 <script>
     
     
-            var map_0179977402d3d3155cb74a37fc00eb12 = L.map(
-                "map_0179977402d3d3155cb74a37fc00eb12",
+            var map_7a3b4d52563d5a4fd4d30bb8da6f9a60 = L.map(
+                "map_7a3b4d52563d5a4fd4d30bb8da6f9a60",
                 {
-                    center: [-34.601085499999996, -58.38318689897575],
+                    center: [-34.6083696, -58.4440583],
                     crs: L.CRS.EPSG3857,
-                    zoom: 10,
-                    zoomControl: true,
-                    preferCanvas: false,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
                 }
             );
 
@@ -60,13 +63,24 @@
 
         
     
-            var tile_layer_c10d189d2b58da90bec453478150bed0 = L.tileLayer(
+            var tile_layer_75a525910cde1dd7caa898b0e6b58045 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
-                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
             );
         
     
-            tile_layer_c10d189d2b58da90bec453478150bed0.addTo(map_0179977402d3d3155cb74a37fc00eb12);
+            tile_layer_75a525910cde1dd7caa898b0e6b58045.addTo(map_7a3b4d52563d5a4fd4d30bb8da6f9a60);
         
 </script>
 </html>
