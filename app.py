@@ -92,7 +92,7 @@ def id_html():
         + "Checking possibity Number: "
         + f"{e}"
     )
-    return render_template('out.html', temp=result_1)
+    return render_template('out_2.html', temp=result_1)
 
 if __name__ == '__main__':
     app.run(host="localhost")
