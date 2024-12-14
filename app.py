@@ -78,4 +78,4 @@ def id_html():
         return render_template('out.html', temp=result_1)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="localhost")
